@@ -8,8 +8,8 @@ x = [128, 256, 384, 512, 640, 768]
 # 각 모델별 실행 시간 (s) 추정 데이터 [cite: 1, 4, 6]
 y_eager = [6.6, 8.1, 10.5, 14.7, None, None]  # PyTorch (Eager Mode)
 y_inductor = [6.7, 8.2, 10.9, 15.0, None, None]  # PyTorch (Inductor)
-# y_megafold = [3.7, 4.6, 7.3, 8.5, 13.2, 17.8]  # MegaFold
-y_megafold = [3.7, 4.6, 6.8, 8.5, 13.2, 17.8]  # MegaFold
+# y_optimized = [3.7, 4.6, 7.3, 8.5, 13.2, 17.8]  # MegaFold
+y_optimized = [3.7, 4.6, 6.8, 8.5, 13.2, 17.8]  # MegaFold
 
 # 2. 그래프 스타일 설정
 plt.figure(figsize=(10, 6))
@@ -36,7 +36,7 @@ plt.plot(
 )
 plt.plot(
     x,
-    y_megafold,
+    y_optimized,
     marker="o",
     markersize=8,
     linewidth=2,

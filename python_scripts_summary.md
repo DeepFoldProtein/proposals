@@ -1,6 +1,6 @@
 # Python Scripts Data Summary
 
-This document contains only the data definitions and relevant descriptions extracted from the Python scripts in `/Users/vv137/works/megafold`.
+This document contains only the data definitions and relevant descriptions extracted from the Python scripts in `/Users/vv137/works/optimized`.
 
 ## Table of Contents
 - [activation_memory.py](#activation_memorypy)
@@ -140,8 +140,8 @@ x = [128, 256, 384, 512, 640, 768]
 # 각 모델별 실행 시간 (s) 추정 데이터 [cite: 1, 4, 6]
 y_eager = [6.6, 8.1, 10.5, 14.7, None, None]  # PyTorch (Eager Mode)
 y_inductor = [6.7, 8.2, 10.9, 15.0, None, None]  # PyTorch (Inductor)
-# y_megafold = [3.7, 4.6, 7.3, 8.5, 13.2, 17.8]  # MegaFold
-y_megafold = [3.7, 4.6, 6.8, 8.5, 13.2, 17.8]  # MegaFold
+# y_optimized = [3.7, 4.6, 7.3, 8.5, 13.2, 17.8]  # MegaFold
+y_optimized = [3.7, 4.6, 6.8, 8.5, 13.2, 17.8]  # MegaFold
 ```
 
 ---
